@@ -8,7 +8,7 @@ const fs = require("fs");
 const express = require("express");
 const app = express();
 const helmet = require("helmet");
-client.login("Nzk5NTQ0M3.YAFHYg.z0Kz4DChaOkprRUiv6uvlhZ-utA");
+client.login("Nzk5NTQ0MDEwMjM4NTkxMDI3.YAFHYg.Km_wbgAQjROyfCUd3ax9V7eZj6Y");
 let admin = ["591416431598632980", "624342742041886730", "Here Admin ID 3"];
 let verified = ["591416431598632980", "624342742041886730", "Here Verified ID 3"];
 client.admin = admin;
@@ -92,7 +92,7 @@ client.on("ready", () => {
       {
         clientID: "799544010238591027",
         clientSecret: "TxmS7SEJXlO03Wxij_sWoCjcowSagp3i",
-        callbackURL: "https://uptime-xzfrost.glitch.me/callback",
+        callbackURL: "https://uptime.xzfrostt.repl.co/callback",
         scope: ["identify"]
       },
       (accessToken, refreshToken, profile, done) => {
