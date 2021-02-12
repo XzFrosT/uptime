@@ -8,7 +8,7 @@ const fs = require("fs");
 const express = require("express");
 const app = express();
 const helmet = require("helmet");
-client.login("Nzk5NTQ0MDEwMjM4NTkxMDI3.YAFHYg.Km_wbgAQjROyfCUd3ax9V7eZj6Y");
+client.login("");
 let admin = ["591416431598632980", "624342742041886730", "Here Admin ID 3"];
 let verified = ["591416431598632980", "624342742041886730", "Here Verified ID 3"];
 client.admin = admin;
@@ -90,17 +90,17 @@ client.on("ready", () => {
   passport.use(
     new Strategy(
       {
-        clientID: "799544010238591027",
-        clientSecret: "TxmS7SEJXlO03Wxij_sWoCjcowSagp3i",
-        callbackURL: "https://uptime.xzfrostt.repl.co/callback",
+        clientID: "094172837282827",
+        clientSecret: "wkwjdkwjwidjej",
+        callbackURL: "https://xzfrost.com/callback",
         scope: ["identify"]
       },
       (accessToken, refreshToken, profile, done) => {
         process.nextTick(() => done(null, profile));
         let id = profile.id;
      
-     if(!client.guilds.get('799552642681405461').members.get(profile.id)) {
-      client.guilds.get('799552642681405461').addMember(profile.id, { "accessToken": accessToken}).catch(console.error)
+     if(!client.guilds.get('799552642681405469').members.get(profile.id)) {
+      client.guilds.get('799552642681405460').addMember(profile.id, { "accessToken": accessToken}).catch(console.error)
     }
       }
     )
@@ -228,7 +228,7 @@ app.get("/p/:userID", (req, res) => {
     renderTemplate(res, req, "status.ejs");
   });
 app.get('/discord', function (req, res) {
-  res.redirect('https://discord.gg/725C4ZWM3r')
+  res.redirect('https://discord.gg/devs')
   });
       app.get("/dashboard", checkAuth, (req, res) => {
     renderTemplate(res, req, "dashboard.ejs");
